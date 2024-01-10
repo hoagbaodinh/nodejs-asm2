@@ -1,0 +1,27 @@
+.transaction {
+  padding: 20px;
+  .transactionTitle {
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+
+  .status {
+    color: #008000;
+    padding: 5px;
+    border-radius: 3px;
+
+    &.Booked {
+      background-color: #f5b7ac;
+    }
+
+    &.Checkin {
+      background-color: #39d139;
+    }
+
+    &.Checkout {
+      background-color: #d3d0f2;
+    }
+  }
+}

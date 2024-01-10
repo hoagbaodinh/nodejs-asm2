@@ -1,0 +1,52 @@
+/* Hotel */
+
+.hotel {
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+  .hotelContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    .hotelItem {
+      width: 100%;
+
+      .hotelImg {
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          height: 300px;
+          position: absolute;
+        }
+      }
+
+      .hotelTitle {
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--first-color);
+        margin-top: 10px;
+        cursor: pointer;
+        display: block;
+      }
+
+      .hotelCity {
+        font-size: 16px;
+        font-weight: 300;
+        padding: 10px 0;
+      }
+
+      .hotelPrice {
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

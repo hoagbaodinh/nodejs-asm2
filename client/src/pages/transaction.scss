@@ -1,0 +1,47 @@
+.transactionContainer {
+  padding: 20px 0 30px;
+
+  .transactionTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    background-color: #32a4c1;
+    color: #fff;
+  }
+
+  td,
+  th {
+    border: 1px solid #f2f2f2;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .transactionStatus {
+    color: #008000;
+    padding: 5px 3px;
+    border-radius: 3px;
+
+    &.Booked {
+      background-color: #f69684;
+    }
+
+    &.Checkin {
+      background-color: #39d139;
+    }
+
+    &.Checkout {
+      background-color: #d3d0f2;
+    }
+  }
+}

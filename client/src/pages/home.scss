@@ -1,0 +1,19 @@
+/* Hero banner (Header) */
+.heroContainer {
+  background-color: var(--first-color);
+  position: relative;
+  .heroBanner {
+    padding: 0 0 100px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .heroBannerSubtitle {
+      margin-bottom: 30px;
+      color: #fff;
+    }
+  }
+}

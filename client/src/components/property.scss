@@ -1,0 +1,21 @@
+/* Property Type */
+.propertyTypeContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+
+  .propertyTypeItem {
+    width: 100%;
+
+    .propertyTypeImg {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .propertyTypeTitle {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
