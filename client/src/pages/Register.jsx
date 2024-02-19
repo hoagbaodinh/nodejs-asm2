@@ -33,7 +33,7 @@ export const action = async ({ request }) => {
   };
 
   try {
-    await axios.post("http://localhost:5050/api/auth/register", data);
+    await axios.post("api/auth/register", data);
     window.alert("Create account successfully");
     return redirect("/login");
   } catch (error) {

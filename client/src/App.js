@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import axios from "axios";
 import LayoutPage from "./pages/Layout";
 import HomePage from "./pages/Home";
 import SearchPage from "./pages/Search";
@@ -10,6 +11,10 @@ import { getCurrentUser } from "./util/auth";
 import { action as logoutAction } from "./components/Logout";
 import Transaction from "./pages/Transaction";
 import ErrorPage from "./pages/Error";
+
+axios.defaults.baseURL = "https://booking-app-mern-taupe.vercel.app/";
+axios.defaults.headers.common["Authorization"] = "AUTH TOKEN";
+axios.defaults.headers.post["Content-Type"] = "application/json";
 
 const router = createBrowserRouter([
   {

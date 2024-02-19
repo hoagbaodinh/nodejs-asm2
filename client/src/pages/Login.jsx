@@ -25,7 +25,7 @@ export const action = async ({ request }) => {
   };
 
   try {
-    const res = await axios.post("http://localhost:5050/api/auth/login", data);
+    const res = await axios.post("api/auth/login", data);
     window.alert("Login successfully");
     localStorage.setItem("currentUser", JSON.stringify(res.data));
     return redirect("../");
