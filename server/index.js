@@ -12,7 +12,10 @@ const userRoute = require("./routes/users");
 const transactionRoute = require("./routes/transactions");
 app.use(bodyParser.json());
 
-app.use(cors());
+app.use(cors({
+  origin: ['https://booking-app-mern-taupe.vercel.app/'],
+  credentials: true
+}));
 
 app.use("/api/auth", authRoute);
 app.use("/api/hotels", hotelRoute);
