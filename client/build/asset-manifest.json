@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d462c1af.css",
+    "main.js": "/static/js/main.130278cc.js",
+    "static/media/HCM.jpg": "/static/media/HCM.c88ab0680d73c0fb2c0f.jpg",
+    "static/media/Ha Noi.jpg": "/static/media/Ha Noi.8086f8cdfb9497d4fef1.jpg",
+    "static/media/Da Nang.jpg": "/static/media/Da Nang.04c1cfce61121ecf1c39.jpg",
+    "index.html": "/index.html",
+    "main.d462c1af.css.map": "/static/css/main.d462c1af.css.map",
+    "main.130278cc.js.map": "/static/js/main.130278cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d462c1af.css",
+    "static/js/main.130278cc.js"
+  ]
+}
