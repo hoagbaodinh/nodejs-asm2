@@ -1,4 +1,4 @@
-const Transaction = require("../models/transaction");
+const Transaction = require("../models/transaction.js");
 
 // Create Transaction
 exports.addTransaction = async (req, res) => {
