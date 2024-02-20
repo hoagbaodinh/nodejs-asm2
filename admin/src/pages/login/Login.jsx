@@ -23,7 +23,10 @@ export const action = async ({ request }) => {
   };
 
   try {
-    const res = await axios.post("http://localhost:5050/api/auth/login", data);
+    const res = await axios.post(
+      "https://booking-app-mern-taupe.vercel.app/api/auth/login",
+      data
+    );
     if (res.data.isAdmin) {
       window.alert("Login successfully");
       localStorage.setItem("currentUser", JSON.stringify(res.data));

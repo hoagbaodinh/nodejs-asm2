@@ -9,7 +9,9 @@ const useFetch = (url) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(`http://localhost:5050/api/${url}`);
+        const res = await axios.get(
+          `https://booking-app-mern-taupe.vercel.app/api/${url}`
+        );
         setData(res.data);
       } catch (error) {
         setError(error);
@@ -23,7 +25,9 @@ const useFetch = (url) => {
   const reFetch = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:5050/api/${url}`);
+      const res = await axios.get(
+        `https://booking-app-mern-taupe.vercel.app/api/${url}`
+      );
       setData(res.data);
     } catch (error) {
       setError(error);
