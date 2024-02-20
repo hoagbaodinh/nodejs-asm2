@@ -16,6 +16,7 @@ app.use(
   cors({
     origin: [
       "https://nodejs-asm2-client.vercel.app",
+      "https://nodejs-asm2-admin.vercel.app",
       "http://localhost:3000",
       "http://localhost:3001",
     ],
