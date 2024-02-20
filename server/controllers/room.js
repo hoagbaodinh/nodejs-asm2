@@ -1,6 +1,6 @@
-const Hotel = require("../models/hotel");
-const Room = require("../models/room");
-const Transaction = require("../models/Transaction.js");
+const Hotel = require("../models/hotel.js");
+const Room = require("../models/room.js");
+const Transaction = require("../models/transaction.js");
 
 // Get tat ca phong
 exports.getRooms = async (req, res) => {

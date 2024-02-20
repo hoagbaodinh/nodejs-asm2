@@ -1,5 +1,5 @@
 const Hotel = require("../models/hotel.js");
-const Transaction = require("../models/Transaction.js");
+const Transaction = require("../models/transaction.js");
 
 // Tim số lượng properties theo tên thành phố
 exports.getPropertiesByCity = async (req, res) => {
