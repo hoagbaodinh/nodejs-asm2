@@ -4,9 +4,9 @@ exports.postRegister = async (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
   try {
-    // const users = await User.find();
-    // const user = users.find((u) => u.username === username);
-    const user = User.findOne({ username: username });
+    const users = await User.find();
+    const user = users.find((u) => u.username === username);
+
     if (user) {
       return res.status(400).json("Username already exists");
     } else {
