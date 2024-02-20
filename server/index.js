@@ -16,12 +16,15 @@ app.use(
   cors({
     origin: ["https://nodejs-asm2-client.vercel.app"],
     methods: ["POST", "GET", "PUT", "DELETE"],
+    origin: [
+      "https://nodejs-asm2-client.vercel.app",
+      "http://localhost:3000",
+      "http://localhost:3001",
+    ],
     credentials: true,
   })
 );
-app.use("/", (req, res) => {
-  res.json("API");
-});
+
 app.use("/api/auth", authRoute);
 app.use("/api/hotels", hotelRoute);
 app.use("/api/rooms", roomRoute);
