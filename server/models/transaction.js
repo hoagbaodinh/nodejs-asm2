@@ -56,10 +56,7 @@ transactionSchema.methods.updateStatus = function () {
   ) {
     this.status = "Checkin";
   }
-  if (
-    this.status === "Checkin" &&
-    new Date(this.dateEnd).getTime() <= currentDay.getTime()
-  ) {
+  if (new Date(this.dateEnd).getTime() <= currentDay.getTime()) {
     this.status = "Checkout";
   }
   return this.save();
