@@ -19,7 +19,9 @@ app.use(
     credentials: true,
   })
 );
-
+app.use("/", (req, res) => {
+  res.json("API");
+});
 app.use("/api/auth", authRoute);
 app.use("/api/hotels", hotelRoute);
 app.use("/api/rooms", roomRoute);
