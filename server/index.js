@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: ["https://booking-app-mern-taupe.vercel.app"],
+    origin: ["https://nodejs-asm2-client.vercel.app/"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
