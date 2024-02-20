@@ -25,7 +25,10 @@ export const action = async ({ request }) => {
   };
 
   try {
-    const res = await axios.post("api/auth/login", data);
+    const res = await axios.post(
+      "https://booking-app-mern-taupe.vercel.app/api/auth/login",
+      data
+    );
     window.alert("Login successfully");
     localStorage.setItem("currentUser", JSON.stringify(res.data));
     return redirect("../");

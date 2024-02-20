@@ -33,7 +33,10 @@ export const action = async ({ request }) => {
   };
 
   try {
-    await axios.post("api/auth/register", data);
+    await axios.post(
+      "https://booking-app-mern-taupe.vercel.app/api/auth/register",
+      data
+    );
     window.alert("Create account successfully");
     return redirect("/login");
   } catch (error) {
